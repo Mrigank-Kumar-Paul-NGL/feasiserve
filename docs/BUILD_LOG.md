@@ -308,3 +308,13 @@ CONDITIONAL GO for Samsung via the static directory (Fetch), not the map locator
 - Live LG Refrigerator 8e7280b7: installation & warranty 70 VERIFIED (quotes from lg.com/in/support/warranty-terms/), availability/distance/experience N/A, overall "Insufficient evidence". Surfaced lg.com/ca_en/ stored as official → fixed by the region rule (stored row left untouched).
 - Samsung recomputed after changes: Refrigerator 70 (A70/I70), Split AC insufficient (I100), directory-only insufficient — unchanged.
 - Tests 107/107 (+12 LG), tsc clean, build OK.
+
+---
+
+## 2026-10-31 — Release blocker fix + release
+- Samsung `officialRegionPath` `/^\/in(\/|$)|\/assets\/in\//`: samsung.com/us, /uk, /ca etc. → "unknown"; India pages and India assets on images.samsung.com stay official; Samsung-linked directory unaffected.
+- Report re-applies the region rule to stored "official" rows at read time (stored rows untouched).
+- Stored Samsung Refrigerator ba8aedeb: **70 → 56** (installation & warranty 70 → 40: the duration came only from samsung.com/us/; India warranty page still covers refrigerators). Split AC 25f330e8 unchanged (I 100, insufficient overall).
+- Tests 109/109 (+2), tsc clean, build OK.
+- Git: initialised; `.agents/`, `.claude/`, `skills-lock.json`, `.env*.local` excluded; secret scan clean (only the public SUPABASE_URL appears in docs). Commit 87f7a18 pushed to https://github.com/Mrigank-Kumar-Paul-NGL/feasiserve (public, main).
+- Vercel: `create_git_project` failed (Vercel could not access the repo; no project created); no Vercel CLI login. Deployment pending user action.
