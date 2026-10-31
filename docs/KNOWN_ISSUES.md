@@ -261,7 +261,7 @@ KI-001 to KI-013 carried over from Stage 1/1.5 (renumbered from the old `#` tabl
 ### KI-037 — Samsung official evidence can include non-India pages
 - **Severity:** High (demo accuracy)
 - **Description:** Refrigerator investigation ba8aedeb fetched `samsung.com/us/home-appliances/warranty/refrigerators/` and counted it as official; its warranty quote may be US terms.
-- **Status:** OPEN (not fixed: Samsung behaviour frozen this stage). Fix = set `officialRegionPath: /^\/in\//` on Samsung (images.samsung.com assets need an exception) and re-run.
+- **Status:** FIXED (Samsung region rule + read-time reclassification of stored rows; ba8aedeb now scores 56).
 
 ### KI-038 — LG installation charges not credited
 - **Severity:** Medium
