@@ -1,0 +1,36 @@
+{
+  "url": "https://www.samsung.com/in/support/service-center/",
+  "goal": "You are on Samsung India's official 'Find a Service Center' page. 1) Close any cookie banner or promotional popup. 2) In the 'Find a Service Center' section, select the product category Home Appliance > Air Conditioner. 3) Enter the post code 560001 in the city/town/post code search field and submit the search (select the suggested location for 560001 / Bengaluru if a suggestion list appears). 4) Wait for the results list to load. If no results appear, increase the search radius once (e.g. to 10 KM or 20 KM) and search again. 5) Extract every service center in the results list: name, full address, phone, distance, operating hours, and handled products if shown. Report honestly: set search_submitted=true only if you actually submitted the post code search; set category_selected to the exact option you selected; set radius_used to the radius shown. If no results appear, copy the exact message from the page into page_message. Do not invent any data.",
+  "browser_profile": "stealth",
+  "proxy_config": { "enabled": true, "type": "tinyfish", "country_code": "IN" },
+  "agent_config": { "max_duration_seconds": 300 },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "search_submitted": { "type": "boolean" },
+      "category_selected": { "type": "string", "nullable": true },
+      "pin_entered": { "type": "string", "nullable": true },
+      "location_selected": { "type": "string", "nullable": true },
+      "radius_used": { "type": "string", "nullable": true },
+      "results_page_url": { "type": "string", "nullable": true },
+      "page_message": { "type": "string", "nullable": true },
+      "service_centers": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "address": { "type": "string", "nullable": true },
+            "phone": { "type": "string", "nullable": true },
+            "distance": { "type": "string", "nullable": true },
+            "hours": { "type": "string", "nullable": true },
+            "products": { "type": "string", "nullable": true }
+          },
+          "required": ["name"]
+        }
+      },
+      "obstacles": { "type": "string", "nullable": true }
+    },
+    "required": ["search_submitted", "service_centers"]
+  }
+}

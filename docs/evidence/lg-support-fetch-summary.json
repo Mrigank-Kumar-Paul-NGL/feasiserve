@@ -1,0 +1,43 @@
+{
+ "retrieved": "2026-10-31",
+ "via": "TinyFish fetch_content (MCP), 1 request, 6 URLs",
+ "errors": [],
+ "results": [
+  {
+   "url": "https://www.lg.com/in/support/",
+   "final_url": "https://www.lg.com/in/support/",
+   "title": "Get Product Help & Support | LG India",
+   "chars": 17825
+  },
+  {
+   "url": "https://www.lg.com/in/support/contact-us/",
+   "final_url": "https://www.lg.com/in/support/contact-us/",
+   "title": "LG India Customer Care Number - Support & Help | LG India",
+   "chars": 2557
+  },
+  {
+   "url": "https://www.lg.com/in/support/product-support/",
+   "final_url": "https://www.lg.com/in/support/product-support/",
+   "title": "LG India Product Support: Expert Assistance | LG India",
+   "chars": 1120
+  },
+  {
+   "url": "https://www.lg.com/in/support/product-support/warranty/",
+   "final_url": "https://www.lg.com/in/support/product-support/warranty/",
+   "title": "Warranty - Support & Help | LG India",
+   "chars": 1069
+  },
+  {
+   "url": "https://www.lg.com/in/support/product-support/repair-request/",
+   "final_url": "https://www.lg.com/in/support/product-support/repair-request/",
+   "title": "Track Repair Status of your LG Device | LG India Support",
+   "chars": 1418
+  },
+  {
+   "url": "https://www.lg.com/in/support/warranty-terms/",
+   "final_url": "https://www.lg.com/in/support/warranty-terms/",
+   "title": "LG Electronics: Consumer Electronics and Appliances from LG - Support & Help | LG India",
+   "chars": 171252
+  }
+ ]
+}

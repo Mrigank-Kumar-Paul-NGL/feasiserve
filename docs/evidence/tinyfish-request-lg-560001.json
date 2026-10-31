@@ -1,0 +1,33 @@
+{
+  "url": "https://www.lg.com/in/support/contact-us/locate-repair-center/",
+  "goal": "You are on LG India's official repair service center locator. 1) Dismiss any cookie or popup banners. 2) If the locator asks for a product/category, choose Air Conditioner (or the closest option such as 'AC' or 'Split AC'). 3) Enter the PIN code 560001 into the PIN code / location search field and submit the search. 4) Wait for results to load. 5) Extract every service center returned: name, full address, phone, distance if shown, and any services/product types listed. Report honestly: set search_submitted=true only if you actually submitted the PIN search; set category_selected to the exact category option you chose or null if none was offered. If no results appear, copy the exact message shown on the page into page_message. Do not invent any data.",
+  "browser_profile": "stealth",
+  "proxy_config": { "enabled": true, "type": "tinyfish", "country_code": "IN" },
+  "agent_config": { "max_duration_seconds": 300 },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "search_submitted": { "type": "boolean" },
+      "category_selected": { "type": "string", "nullable": true },
+      "pin_entered": { "type": "string", "nullable": true },
+      "results_page_url": { "type": "string", "nullable": true },
+      "page_message": { "type": "string", "nullable": true },
+      "service_centers": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "address": { "type": "string", "nullable": true },
+            "phone": { "type": "string", "nullable": true },
+            "distance": { "type": "string", "nullable": true },
+            "services": { "type": "string", "nullable": true }
+          },
+          "required": ["name"]
+        }
+      },
+      "obstacles": { "type": "string", "nullable": true }
+    },
+    "required": ["search_submitted", "service_centers"]
+  }
+}

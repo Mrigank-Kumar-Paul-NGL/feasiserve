@@ -1,0 +1,24 @@
+9s running | fetch/official=succeeded locator/agent=running(RUNNING) search/community=succeeded search/official=succeeded | last step: Navigate to Samsung service center locator page
+20s running | fetch/official=succeeded locator/agent=running(RUNNING) search/community=succeeded search/official=succeeded | last step: Navigate to Samsung service center locator page
+32s running | fetch/official=succeeded locator/agent=running(RUNNING) search/community=succeeded search/official=succeeded | last step: Navigate to Samsung service center locator page
+43s running | fetch/official=succeeded locator/agent=running(RUNNING) search/community=succeeded search/official=succeeded | last step: Close the AI experience modal overlay
+55s running | fetch/official=succeeded locator/agent=running(RUNNING) search/community=succeeded search/official=succeeded | last step: Close the AI experience modal overlay
+66s running | fetch/official=succeeded locator/agent=running(RUNNING) search/community=succeeded search/official=succeeded | last step: Close the AI experience modal overlay
+78s running | fetch/official=succeeded locator/agent=running(RUNNING) search/community=succeeded search/official=succeeded | last step: Scroll to bottom of page to find service center locator
+89s running | fetch/official=succeeded locator/agent=running(RUNNING) search/community=succeeded search/official=succeeded | last step: Scroll to bottom of page to find service center locator
+101s running | fetch/official=succeeded locator/agent=running(RUNNING) search/community=succeeded search/official=succeeded | last step: Scroll to bottom of page to find service center locator
+112s running | fetch/official=succeeded locator/agent=running(RUNNING) search/community=succeeded search/official=succeeded | last step: Try to reveal service center search form
+124s running | fetch/official=succeeded locator/agent=running(RUNNING) search/community=succeeded search/official=succeeded | last step: Try to reveal service center search form
+135s running | fetch/official=succeeded locator/agent=running(RUNNING) search/community=succeeded search/official=succeeded | last step: Try to reveal service center search form
+147s running | fetch/official=succeeded locator/agent=running(RUNNING) search/community=succeeded search/official=succeeded | last step: Scroll to bottom of page to find service center locator
+159s running | fetch/official=succeeded locator/agent=running(RUNNING) search/community=succeeded search/official=succeeded | last step: Scroll to bottom of page to find service center locator
+171s running | fetch/official=succeeded locator/agent=running(RUNNING) search/community=succeeded search/official=succeeded | last step: Scroll to bottom of page to find service center locator
+184s running | fetch/official=succeeded locator/agent=running(RUNNING) search/community=succeeded search/official=succeeded | last step: Close the coupon popup to access service center locator
+196s running | fetch/official=succeeded locator/agent=running(RUNNING) search/community=succeeded search/official=succeeded | last step: Close the coupon popup to access service center locator
+209s running | fetch/official=succeeded locator/agent=running(RUNNING) search/community=succeeded search/official=succeeded | last step: Close the coupon popup to access service center locator
+222s running | fetch/official=succeeded locator/agent=running(RUNNING) search/community=succeeded search/official=succeeded | last step: Check if search form appeared after Home Appliance click
+233s running | fetch/official=succeeded locator/agent=running(RUNNING) search/community=succeeded search/official=succeeded | last step: Check if search form appeared after Home Appliance click
+245s running | fetch/official=succeeded locator/agent=running(RUNNING) search/community=succeeded search/official=succeeded | last step: Check if search form appeared after Home Appliance click
+257s partial | fetch/official=succeeded locator/agent=succeeded(COMPLETED) search/community=succeeded search/official=succeeded | last step: Task completed
+
+[exited with code 0]

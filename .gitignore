@@ -1,0 +1,15 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+.env
+.env.local
+.env*.local
+.vercel/
+
+# local tooling, not part of the app
+.agents/
+.claude/
+skills-lock.json
+.taste-skill/
